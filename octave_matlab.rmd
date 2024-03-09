@@ -1,0 +1,87 @@
+---
+title: "Octave e MatLab"
+subtitle: "Estudo em MatLab para Octave"
+author: "Sergio Pedro R Oliveira"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+#lof: true #adiciona lista de figuras
+#lot: true #adiciona lista de tabelas
+#toc-title: SUMÁRIO #nome do sumário
+output:
+  pdf_document: 
+    number_sections: true
+    toc: false
+  odt_document: 
+    number_sections: true
+  md_document:
+    number_sections: true
+    variant: markdown_github
+  github_document: 
+  word_document: 
+    toc: TRUE
+    number_sections: true
+  html_document:
+    number_sections: true
+    df_print: paged
+bibliography: RMarkdown/bibliografia_matlab.bib
+csl: RMarkdown/abnt.csl
+---
+
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{roman}
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{SUMÁRIO}
+\tableofcontents
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listfigurename}{LISTA DE FIGURAS}
+\listoffigures
+```
+
+\newpage
+
+```{=latex}
+\setcounter{tocdepth}{4}
+\renewcommand{\listtablename}{LISTA DE TABELAS}
+\listoftables
+```
+
+```{r Pacotes, message=FALSE, warning=FALSE, echo=FALSE}
+library(knitr)
+library(rmarkdown)
+library(readr)
+library(tibble)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(data.table)
+library(janitor)
+```
+
+\newpage
+
+# OBJETIVO
+
+Estudo dirigido em MatLab para Octave.\
+
+\pagenumbering{arabic}
+\newpage
+
+# VISÃO GERAL
+# ARRANJOS NUMÉRICOS, DE CÉLULAS E DE ESTRUTURA
+# FUNÇÕES E ARQUIVOS
+# PROGRAMANDO COM O MATLAB
+# PLOTAGEM AVANÇADA
+# CONSTRUÇÃO DE MODELOS E REGRESSÃO
+# ESTATÍSTICA, PROBABILIDADE E INTERPOLAÇÃO
+# EQUAÇÕES ALGÉBRICAS LINEARES
+# MÉTODOS NUMÉRICOS PARA CÁLCULO E EQUAÇÕES DIFERENCIAIS
+# SIMULINK
+# MuPAD
