@@ -60,5 +60,20 @@ Estudo dirigido de Octave.\
 \pagenumbering{arabic}
 \newpage
 
+# VIDEOAULAS
+
+<https://www.youtube.com/watch?v=MoKKDVAMjDQ&list=PLUfT_zSB_TFTFhB87Boy3RTzB0CpcMJ4C&ab_channel=EstudarEngenharia>
 
 # PRINCIPAIS TÓPICOS
+
+## Visão geral
+## Arranjos numéricos, de células e de estrutura
+## Funções e arquivos
+## Programando com o MatLab
+## Plotagem avançada
+## Construção de modelos e regressão
+## Estatística, probabilidade e interpolação
+## Equações algébricas lineares
+## Métodos numéricos para cálculo e equações diferenciais
+## SIMULINK
+## MuPAD
