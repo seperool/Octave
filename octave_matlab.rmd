@@ -7,11 +7,11 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
+  odt_document: 
+    number_sections: true
   pdf_document: 
     number_sections: true
     toc: false
-  odt_document: 
-    number_sections: true
   md_document:
     number_sections: true
     variant: markdown_github
@@ -75,6 +75,55 @@ Estudo dirigido em MatLab para Octave.\
 \newpage
 
 # VISÃO GERAL
+
+## Operações aritméticas escalares
+
+```{r Op_aritmetica, echo = FALSE, message=FALSE, warning=FALSE}
+#Bibliotecas
+library(tibble)
+library(knitr)
+
+#colunas
+Simbolo <- c("^","*","/","+","-")
+Op_aritmetica <- c("Exponenciação: a^b",
+                   "Multiplicação: ab",
+                   "Divisão a direita: a/b",
+                   "Adição: a+b",
+                   "Subtração: a-b")
+Form_matlab <- c("a^b",
+                 "a*b",
+                 "a/b",
+                 "a+b",
+                 "a-b")
+
+#Tabela
+tbl_op_aritmetica <- tibble(Simbolo,Op_aritmetica,Form_matlab)
+kable(tbl_op_aritmetica, col.names = c("Símbolo", "Operação", "Forma no MatLab/Octave"), 
+      align = "lcr",caption = "Operações aritméticas escalares")
+```
+
+## Ordem de precedência
+
+```{r ordem_precedencia, echo = FALSE, message=FALSE, warning=FALSE}
+#Bibliotecas
+library(tibble)
+library(knitr)
+
+#colunas
+Precedencia <- c("Primeiro","Segundo","Terceiro","Quarto")
+Op_precedencia <- c("Parênteses, a começar pelo par mais interno.",
+                    "Exponenciação, da esquerda para a direita.",
+                    "Multiplicação e divisão com igual precedência, da esquerda para a direita.",
+                    "Adição e subtração com igual precedência, da esquerda para a direita.")
+
+#Tabela
+tbl_op_precedencia <- tibble(Precedencia, Op_precedencia)
+kable(tbl_op_precedencia, col.names = c("Precedência", "Operação"), 
+      align = "ll", caption = "Ordem de precedência")
+```
+
+\newpage
+
 # ARRANJOS NUMÉRICOS, DE CÉLULAS E DE ESTRUTURA
 # FUNÇÕES E ARQUIVOS
 # PROGRAMANDO COM O MATLAB
