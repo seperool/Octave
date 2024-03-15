@@ -1,6 +1,6 @@
-Escrito em 11/03/24
+Escrito em 15/03/24
 ---
-Para 12/03/24
+Para 16/03/24
 ---
 Subir github:
 
@@ -8,5 +8,9 @@ Estudar:
 	- Livro:
 		- Capítulo 1
 	- Videoaulas:
-		- 3 a 27
+		- 5 a 27
 Afazeres:
+	- Videoaulas
+		- 1 a 4
+	- Exercício videoaula
+		- 5
