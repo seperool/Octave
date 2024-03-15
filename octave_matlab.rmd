@@ -122,6 +122,67 @@ kable(tbl_op_precedencia, col.names = c("Precedência", "Operação"),
       align = "ll", caption = "Ordem de precedência")
 ```
 
+## Operador de atribuição
+
+- O sinal = no MatLab é chamado de operador de atribuição ou de substituição.\
+- Quando você digita `x = 3`, você esta dizendo ao MatLab para atribuir 3 a variável x.\
+- Entretanto, no MatLab também podemos digitar algo como: `x = x + 2`. Isso diz ao MatLab para adicionar 2 ao valor atual de `x` e substituir o valor atual de `x` com esse novo valor.\
+- Outra restrição é que o lado direito do operador = deve ter um valor calculável.\
+
+## Nomes de variável
+
+- Os nomes de variáveis devem começar com uma letra; o restante do nome pode conter letras, digitos e traços inferiores (*underscore*).\
+- O MatLab é sensível a maiusculas e minusculas (*case sensitive*).\
+
+\newpage
+
+## Gerenciando a sessão de trabalho
+
+- Um sinal de ponto e vírgula no final da linha suprime a impressão dos resultados na tela. Se um sinal de ponto e vírgula não for inserido no final da linha, o MatLab exibe os resultados da linha na tela.\
+- Mesmo que você suprima a exibição com ponto e vírgula, o MatLab continua armazenando o valor da variável.\
+
+```{r Comandos_sessao, echo=FALSE, message=FALSE, warning=FALSE}
+#Bibliotecas
+library(tibble)
+library(knitr)
+
+#colunas
+Comandos <- c("clc",
+              "clear",
+              "clear var1 var2",
+              "exist('name')",
+              "quit",
+              "who",
+              "whos",
+              ":",
+              ",",
+              ";",
+              "...")
+Desc_comandos <- c("Limpa a janela de comandos.",
+                   "Remove todas as variáveis da memória.",
+                   "Remove as variáveis var1 e var2 da memória.",
+                   "Determina se existe um arquivo ou variável com o nome 'name'.",
+                   "Fecha o MatLab.",
+                   "Lista todas as variáveis da memória",
+                   "Lista todas as variáveis da memória e tamanhos e indica se elas possuem parte imaginaria.",
+                   "Dois pontos; gera arranjo com elementos igualmente espaçados.",
+                   "Vírgula; separa elementos de um arranjo.",
+                   "Ponto e vírgula; Suprime impressão na tela; Também indica uma nova linha em um arranjo.",
+                   "Reticências; Continua uma linha.")
+
+#Tabela
+tbl_comandos <- tibble(Comandos, Desc_comandos)
+kable(tbl_comandos, col.names = c("Comandos", "Descrição"), 
+      align = "ll", caption = "Comandos para gerenciar a sessão de trabalho")
+```
+
+- Você pode inserir varios comandos na mesma linha separando-os com uma vírgula se quiser ver o resultado do comando anterior, ou com um ponto e vírgula se quiser suprimir a exibição.\
+```
+>> x=2; y=6+x, x=y+7
+y = 8
+x = 15
+```
+
 \newpage
 
 # ARRANJOS NUMÉRICOS, DE CÉLULAS E DE ESTRUTURA
