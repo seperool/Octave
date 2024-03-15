@@ -8,9 +8,7 @@ Estudar:
 	- Livro:
 		- Capítulo 1
 	- Videoaulas:
-		- 5 a 27
+		- 6 a 27
 Afazeres:
 	- Videoaulas
 		- 1 a 4
-	- Exercício videoaula
-		- 5
